@@ -1,0 +1,19 @@
+<h1> Hello From Rails! </h1>
+<p>
+  It is now <%= @time %>
+</p>
+<p>
+  One Hour from now is <%= 1.hour.from_now.localtime %>
+</p>
+
+<p>
+ The List of files in the Directory are :
+  <% @file.each do | file | %>
+    <ul>
+      <%= file %>
+    </ul>
+
+    <% end %>
+
+</p>
+
